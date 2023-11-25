@@ -1,5 +1,5 @@
 @use'../base/common';
-@use'..//variable/variable';
+@use'../variable/variable';
 
 #offer_item_part{
     background: variable.$secondary_color;
@@ -25,13 +25,13 @@
         p{
             font-size: 20px;
             font-weight: 700;
-            font-family: variable.$roboto;
+           font-family: "Roboto", sans-serif;
             color: #000;
         }
         h2{
             font-size: 35px;
             font-weight: 700;
-            // font-family: variable.$roboto;
+            font-family: variable.$roboto;
             color: variable.$brand_color;
             text-transform: uppercase;
         }
@@ -46,23 +46,25 @@
             position: absolute;
             top: 100%;
             left: 45%;
-               
-            li{
-                .slick-active{
-                    button{
-                        background: variable.$brand_color;
-                    }
-                    
+
+            .slick-active{
+                button{
+                    background: variable.$brand_color !important;
                 }
+                
+            }
+             li{
+               
                 button{
                     font-size: 0;
                     width: 12px;
                     height: 12px;
                     border-radius: 50%;
                     border: none;
-                    background: #000;
+                    background: rgb(0, 0, 0)!important;
                 }
-            }
+             }    
+        
             
         }
 
@@ -85,7 +87,7 @@
                 .pera_1{
                     font-size: 14px;
                     font-weight: 500;
-                    font-family: variable.$roboto;
+                  font-family: "Roboto", sans-serif;
                     color: #DD0606;
                     position: relative;
                     &::after{
@@ -103,7 +105,7 @@
                 .pera_2{
                     font-size: 14px;
                     font-weight: 500;
-                    font-family: variable.$roboto;
+                  font-family: "Roboto", sans-serif;
                     color: #DD0606;
                     position: relative;
                     &::after{

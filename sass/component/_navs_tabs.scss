@@ -10,13 +10,13 @@
         p{
             font-size: 20px;
             font-weight: 700;
-            font-family: variable.$roboto;
+             font-family: "Roboto", sans-serif;
             color: #000;
         }
         h2{
             font-size: 35px;
             font-weight: 700;
-            font-family: variable.$roboto;
+            font-family: "Roboto", sans-serif;
             color: variable.$brand_color;
             text-transform: uppercase;
             margin-bottom: 26px;
@@ -29,14 +29,14 @@
             border-bottom: none;
             font-size: 20px;
             font-weight: 700;
-            font-family: variale.$roboto;
+            // font-family: variale.$roboto;
         }
         .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
             background-color: #fff;
             border-color: variable.$secondary_color;
             font-size: 20px;
             font-weight: 700;
-            font-family: variale.$roboto;
+         /*  font-family: variale.$roboto;*/
         }
         .nav-tabs .nav-link {
             margin-bottom: 10px;

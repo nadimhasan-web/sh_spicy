@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -269,8 +268,8 @@ h1, h2, h3, h4, h5, h6, ul, ol, p {
   top: 100%;
   left: 45%;
 }
-#offer_item_part .offer_card_main ul li .slick-active button {
-  background: #1A5D1A;
+#offer_item_part .offer_card_main ul .slick-active button {
+  background: #1A5D1A !important;
 }
 #offer_item_part .offer_card_main ul li button {
   font-size: 0;
@@ -278,7 +277,7 @@ h1, h2, h3, h4, h5, h6, ul, ol, p {
   height: 12px;
   border-radius: 50%;
   border: none;
-  background: #000;
+  background: rgb(0, 0, 0) !important;
 }
 #offer_item_part .offer_card_main .offer_card {
   width: 250px;
@@ -521,7 +520,7 @@ h1, h2, h3, h4, h5, h6, ul, ol, p {
   font-size: 30px;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
-  color: hsl(120, 56%, 23%);
+  color: #1A5D1A;
   text-align: center;
   position: relative;
   margin-bottom: 25px;
@@ -625,10 +624,15 @@ h1, h2, h3, h4, h5, h6, ul, ol, p {
 #navs_tabs_part .navs_row .nav-tabs {
   --bs-nav-tabs-border-width: none !important;
   border-bottom: none;
+  font-size: 20px;
+  font-weight: 700;
 }
 #navs_tabs_part .navs_row .nav-tabs .nav-item.show .nav-link, #navs_tabs_part .navs_row .nav-tabs .nav-link.active {
   background-color: #fff;
   border-color: #FFF8EE;
+  font-size: 20px;
+  font-weight: 700;
+  /*  font-family: variale.$roboto;*/
 }
 #navs_tabs_part .navs_row .nav-tabs .nav-link {
   margin-bottom: 10px;
