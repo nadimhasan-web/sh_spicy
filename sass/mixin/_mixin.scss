@@ -1,0 +1,16 @@
+@use'../base/common';
+@mixin common_head{
+    p{
+        font-size: 20px;
+        font-weight: 700;
+        font-family: variable.$roboto;
+        color: #000;
+    }
+    h2{
+        font-size: 35px;
+        font-weight: 700;
+        font-family: variable.$roboto;
+        color: variable.$brand_color;
+        text-transform: uppercase;
+    }
+}

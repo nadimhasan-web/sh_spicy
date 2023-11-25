@@ -1,0 +1,128 @@
+@use'../base/common';
+@use'../variable/variable';
+#banner_part{
+    background-image: url(../image/banner.png);
+    padding: 50px 0px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -30px;
+
+    .banner_image{
+        width: 400px;
+        margin: 0 auto;
+    }
+    .banner_button{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 14px;
+        .order_button{
+            a{
+                width: 250px;
+                height: 60px;
+                background: variable.$secondary_color;
+                border-radius: 50px;
+                font-size: 25px;
+                font-weight: 700;
+                font-family: variable.$roboto;
+                color: variable.$black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all linear .3s;
+                &:hover{
+                    background: variable.$brand_color;
+                    color: #fff;
+                }
+                span{
+                    margin-left: 5px;
+                }
+            }
+        }
+        .menu_button{
+            a{
+                width: 250px;
+                height: 60px;
+                background: variable.$secondary_color;
+                border-radius: 50px;
+                font-size: 25px;
+                font-weight: 700;
+                font-family: variable.$roboto;
+                color: variable.$black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all linear .3s;
+                &:hover{
+                    background: variable.$brand_color;
+                    color: #fff;
+                }
+                span{
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+    .banner_contact{
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 20px;
+        .call_button{
+                width: 250px;
+                height: 40px;
+                border-radius: 50px;
+                background: variable.$secondary_color;
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+            .call_image{
+                width: 35px;
+                img{
+                    margin-left: 3px;
+                }
+            }
+            a{
+                font-size: 18px;
+                font-weight: 700;
+                font-family: variable.$roboto;
+                color: variable.$black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                span{
+                    margin-right: 30px;
+                }
+            }
+        }
+        .media_button{
+            width: 250px;
+            height: 40px;
+            border-radius: 50px;
+            background: variable.$secondary_color;
+            
+            .media_icon{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+                margin-top: 3px;
+                .fb_icon{
+                    width: 35px;
+                }
+                .insta_icon{
+                    width: 35px;
+                }
+                .twitter_icon{
+                    width: 35px;
+                }
+                .linked_icon{
+                    width: 35px;
+                }
+            }
+        }
+    }
+}

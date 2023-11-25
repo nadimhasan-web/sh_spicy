@@ -1,0 +1,87 @@
+@use'../base/common';
+
+@use '../variable/variable';
+
+ 
+.main_menu{
+    background: #FFF8EE !important;
+    ul{
+        li{
+            a{
+                font-size: 18px;
+                font-weight: 700;
+                font-family: variable.$roboto;
+                color: variable.$black !important;
+                transition: all linear .3s;
+                position: relative;
+                transition: all linear .3s;
+                &:hover{
+                    color: variable.$brand_color !important;
+                }
+                &::after{
+                    content: '';
+                    width: 0%;
+                    transition: all linear .3s;
+                    margin: auto;
+                    height: 2px ;
+                    background: variable.$brand_color;
+                    bottom: 0;
+                    left: 0;
+                    position: absolute;
+                }
+                &:hover{
+                    &::after{
+                        width: 100%;
+                         transition: all linear .3s;
+                    }
+                }
+            }
+        }
+    }
+    .menu_button{
+        display: flex;
+        gap: 50px;
+        .order_button{
+            font-size: 18px;
+            font-weight: 700;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            width: 150px;
+            height: 50px;
+            background: #1A5D1A;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 14px;
+            border: 1px solid #1A5D1A;
+            transition: all linear .3s;
+            &:hover{
+                background: transparent;
+                color: #1A5D1A;
+                
+            }
+            span{
+                margin-left: 5px;
+            }
+        }
+        .login_button{
+            font-size: 18px;
+            font-weight: 700;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            width: 110px;
+            height: 50px;
+            background: #1A5D1A;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 14px;
+            border: 1px solid #1A5D1A;
+            transition: all linear .3s;
+            &:hover{
+                background: transparent;
+                color: #1A5D1A;
+            }
+        }
+    }
+}

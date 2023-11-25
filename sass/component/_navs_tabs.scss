@@ -1,0 +1,25 @@
+@use'../base/common';
+@use'../variable/variable';
+
+#navs_tabs_part{
+    background: variable.$secondary_color;
+    padding-top: 60px;
+    padding-bottom: 70px;
+    .navs_head{
+        text-align: center;
+        p{
+            font-size: 20px;
+            font-weight: 700;
+            font-family: variable.$roboto;
+            color: #000;
+        }
+        h2{
+            font-size: 35px;
+            font-weight: 700;
+            font-family: variable.$roboto;
+            color: variable.$brand_color;
+            text-transform: uppercase;
+            margin-bottom: 26px;
+        }
+    }
+}

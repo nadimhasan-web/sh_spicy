@@ -1,0 +1,116 @@
+@use'../base/common';
+@use'../variable/variable';
+
+#special_dish_part{
+    background: variable.$secondary_color;
+    padding: 95px 0px 127px 0px;
+    position: relative;
+    z-index: 1;
+    &::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: url(../image/dish_bg.png);
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
+    .dish_head{
+        h2{
+            font-size: 50px;
+            font-weight: 700;
+            font-family: variable.$roboto;
+            color: variable.$brand_color;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        .heading{
+            padding-top: 30px;
+            h3{
+                font-size: 30px;
+                font-weight: 700;
+                font-family: variable.$roboto;
+                color: aqua;
+            }
+        }
+    }
+    .dish_item{
+        width: 350px;
+        padding-bottom: 10px;
+        border-radius: 15px;
+        background: #fff;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        img{
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+        }
+        h3{
+            font-size: 30px;
+            font-weight: 700;
+            font-family: variable.$roboto;
+            color: variable.$brand_color;
+            margin-top: 16px;
+            text-align: center;
+        }
+        p{
+            width: 170px;
+            font-size: 18px;
+            font-weight: 400;
+            font-family: variable.$roboto;
+            color: variable.$black;
+            text-align: center;
+            margin-top: 8px;
+            margin: 0 auto;
+        }
+        .dish_button{
+            margin-left: 17px;
+            a{
+                width: 120px;
+                height: 30px;
+                font-size: 16px;
+                font-weight: 700;
+                font-family: variable.$roboto;
+                background: variable.$brand_color;
+                color: #fff;
+                border-top-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 16px;
+            }
+        }
+    }
+    .view_more_button{
+        margin-top: 30px;
+        a{
+            width: 170px;
+            height: 40px;
+            font-size: 16px;
+            font-weight: 700;
+            font-family: variable.$roboto;
+            background: variable.$brand_color;
+            color: #fff;
+            border-top-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 16px;
+            border: 1px solid variable.$brand_color;
+            transition: all linear .3s;
+            float: right;
+            &:hover{
+                background: transparent;
+                color: variable.$brand_color;
+            }
+            
+        }
+    }
+}
