@@ -521,7 +521,7 @@ h1, h2, h3, h4, h5, h6, ul, ol, p {
   font-size: 30px;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
-  color: #1A5D1A;
+  color: hsl(120, 56%, 23%);
   text-align: center;
   position: relative;
   margin-bottom: 25px;
@@ -621,4 +621,19 @@ h1, h2, h3, h4, h5, h6, ul, ol, p {
   color: #1A5D1A;
   text-transform: uppercase;
   margin-bottom: 26px;
+}
+#navs_tabs_part .navs_row .nav-tabs {
+  --bs-nav-tabs-border-width: none !important;
+  border-bottom: none;
+}
+#navs_tabs_part .navs_row .nav-tabs .nav-item.show .nav-link, #navs_tabs_part .navs_row .nav-tabs .nav-link.active {
+  background-color: #fff;
+  border-color: #FFF8EE;
+}
+#navs_tabs_part .navs_row .nav-tabs .nav-link {
+  margin-bottom: 10px;
+  border: none;
+  border-top-left-radius: 15px;
+  border-top-right-radius: none !important;
+  border-bottom-right-radius: 15px;
 }/*# sourceMappingURL=style.css.map */
