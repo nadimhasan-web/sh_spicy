@@ -50,20 +50,21 @@
             .slick-active{
                 button{
                     background: variable.$brand_color !important;
+                    border: 1px solid variable.$brand_color;
                 }
                 
             }
-             li{
-               
+            li{
                 button{
                     font-size: 0;
                     width: 12px;
                     height: 12px;
                     border-radius: 50%;
                     border: none;
-                    background: rgb(0, 0, 0)!important;
+                    background: transparent!important;
+                    border: 1px solid variable.$brand_color;
                 }
-             }    
+            }    
         
             
         }
