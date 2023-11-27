@@ -796,8 +796,9 @@ h1, h2, h3, h4, h5, h6, ul, ol, p {
   font-size: 20px;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
-  background: #1A5D1A;
-  color: #fff;
+  background: #fff;
+  color: #1A5D1A;
+  border: 1px solid #1A5D1A;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -805,5 +806,63 @@ h1, h2, h3, h4, h5, h6, ul, ol, p {
   border-bottom-right-radius: 15px;
   margin: 0 auto;
   margin-top: 45px;
-  position: relative;
+  transition: all linear 3s;
+}
+#about_part .about_button a:hover {
+  background: #1A5D1A;
+  color: #fff;
+}
+
+#happy_client_part {
+  background: #FFF8EE;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+#happy_client_part .client_head h2 {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: #1A5D1A;
+  margin-bottom: 50px;
+  text-align: center;
+}
+#happy_client_part .client_card {
+  padding: 25px 23px 40px 23px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: #FFF8EE;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  transition: all linear 0.3s;
+}
+#happy_client_part .client_card .client_image {
+  width: 70px;
+  margin: 0 auto;
+}
+#happy_client_part .client_card .client_card_text h3 {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  text-align: center;
+  margin-top: 13px;
+}
+#happy_client_part .client_card .client_card_text p {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  text-align: center;
+  text-align: left;
+  margin-top: 15px;
+}
+#happy_client_part .client_card:hover {
+  background: #fff;
+}
+#happy_client_part .client_card .client_review {
+  display: flex;
+  margin-top: 10px;
+}
+#happy_client_part .client_card .client_review .star {
+  font-size: 18px;
+  color: #FF6C22;
 }/*# sourceMappingURL=style.css.map */

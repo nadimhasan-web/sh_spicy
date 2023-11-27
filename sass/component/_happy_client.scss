@@ -1,0 +1,63 @@
+@use'../base/common';
+@use'../variable/variable';
+
+#happy_client_part{
+    background: variable.$secondary_color;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    .client_head{
+        h2{
+            font-size: 50px;
+            font-weight: 700;
+            font-family: variable.$roboto;
+            color: variable.$brand_color;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+    }
+    .client_card{
+        padding: 25px 23px 40px 23px;
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background: variable.$secondary_color;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        transition: all linear .3s;
+        .client_image{
+            width: 70px;
+            margin: 0 auto;
+            .img{
+                
+            }
+        }
+        .client_card_text{
+            h3{
+                font-size: 18px;
+                font-weight: 700;
+                font-family: variable.$roboto;
+                color: #000;
+                text-align: center;
+                margin-top: 13px;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 400;
+                font-family: variable.$roboto;
+                color: #000;
+                text-align: center;
+                text-align: left;
+                margin-top: 15px;
+            }
+        }
+        &:hover{
+            background: #fff;
+        }
+        .client_review{
+            display: flex;
+            margin-top: 10px;
+            .star{
+                font-size: 18px;
+                color: #FF6C22;
+            }
+        }
+    }
+}
