@@ -76,7 +76,7 @@
             border-bottom-right-radius: 15px;
             margin: 0 auto;
             margin-top: 45px;
-            transition: all linear 3s;
+            transition: all linear .3s;
             
             &:hover{
                 background: variable.$brand_color;
