@@ -27,6 +27,7 @@ h1, h2, h3, h4, h5, h6, ul, ol, p {
 
 .main_menu {
   background: #FFF8EE !important;
+  padding: 0px;
 }
 .main_menu ul li a {
   font-size: 18px;
@@ -99,6 +100,17 @@ h1, h2, h3, h4, h5, h6, ul, ol, p {
 .main_menu .menu_button .login_button:hover {
   background: transparent;
   color: #1A5D1A;
+}
+
+.fixed_menu {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: transparent;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+  z-index: 999;
 }
 
 #banner_part {
@@ -262,7 +274,7 @@ h1, h2, h3, h4, h5, h6, ul, ol, p {
 }
 #offer_item_part .offer_card_main ul {
   display: flex;
-  gap: 10px;
+  gap: 14px;
   justify-content: center;
   position: absolute;
   top: 100%;
@@ -935,4 +947,165 @@ h1, h2, h3, h4, h5, h6, ul, ol, p {
 }
 #our_team_part .team_card:hover p {
   color: #fff;
+}
+
+#footer_part {
+  padding-top: 62px;
+  background: #1A5D1A;
+}
+#footer_part .footer_col_one .footer_logo img {
+  width: 250px !important;
+}
+#footer_part .footer_col_one .footer_text {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  width: 283px;
+}
+#footer_part .footer_col_one .footer_contact .email a {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+#footer_part .footer_col_one .footer_contact .email a span {
+  margin-right: 10px;
+  font-size: 24px;
+  color: red;
+}
+#footer_part .footer_col_one .footer_contact .phn_number .nmbr_one {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  display: block;
+}
+#footer_part .footer_col_one .footer_contact .phn_number .nmbr_one span {
+  margin-right: 10px;
+  font-size: 24px;
+  color: #000;
+}
+#footer_part .footer_col_one .footer_contact .phn_number .nmbr_two {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 35px;
+}
+#footer_part .footer_col_one .footer_contact .phn_number .nmbr_two span {
+  margin-right: 10px;
+  font-size: 24px;
+  color: #000;
+}
+#footer_part .footer_col_one .media_icon {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 3px;
+}
+#footer_part .footer_col_one .media_icon .fb_icon {
+  width: 35px;
+}
+#footer_part .footer_col_one .media_icon .insta_icon {
+  width: 35px;
+}
+#footer_part .footer_col_one .media_icon .twitter_icon {
+  width: 35px;
+}
+#footer_part .footer_col_one .media_icon .linked_icon {
+  width: 35px;
+}
+#footer_part .footer_col_two .col_two_head {
+  margin-bottom: 25px;
+}
+#footer_part .footer_col_two .col_two_head h3 {
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 38px;
+  position: relative;
+}
+#footer_part .footer_col_two .col_two_head h3::after {
+  content: "";
+  width: 170px;
+  height: 2px;
+  background: #fff;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+#footer_part .footer_col_two .col_two_image {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+#footer_part .footer_col_two .col_two_image .footer_img {
+  width: 133px;
+}
+#footer_part .footer_col_two .col_two_button a {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  width: 150px;
+  height: 40px;
+  margin-left: 60px;
+  background: #FFF8EE;
+  margin-top: 28px;
+  border: 1px solid #1A5D1A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transition: all linear 0.3s;
+}
+#footer_part .footer_col_two .col_two_button a:hover {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+#footer_part .footer_col_three .col_three_head {
+  margin-bottom: 25px;
+}
+#footer_part .footer_col_three .col_three_head h3 {
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 38px;
+  position: relative;
+}
+#footer_part .footer_col_three .col_three_head h3 span {
+  font-size: 24px;
+  color: red;
+}
+#footer_part .footer_col_three .col_three_head h3::after {
+  content: "";
+  width: 170px;
+  height: 2px;
+  background: #fff;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+#footer_part .footer_col_three .col_three_img .col_three_img {
+  width: 350px;
+}
+#footer_part .footer_copyright_text {
+  margin-top: 34px;
+  height: 88px;
+  background: #FFF8EE;
+}
+#footer_part .footer_copyright_text h3 {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  text-align: center;
+  line-height: 88px;
 }/*# sourceMappingURL=style.css.map */

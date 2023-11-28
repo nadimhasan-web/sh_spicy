@@ -5,12 +5,15 @@
  
 .main_menu{
     background: #FFF8EE !important;
+    padding: 0px;
+
+    
     ul{
         li{
             a{
                 font-size: 18px;
                 font-weight: 700;
-              font-family: "Roboto", sans-serif;
+                font-family: "Roboto", sans-serif;
                 color: variable.$black !important;
                 transition: all linear .3s;
                 position: relative;
@@ -84,4 +87,13 @@
             }
         }
     }
+}
+.fixed_menu{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: transparent;
+    backdrop-filter: blur(1px);
+    z-index: 999;
 }

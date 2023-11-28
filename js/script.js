@@ -18,8 +18,24 @@ $('.menu_one').slick({
   arrows:false,
   autoplaySpeed: 3000,
   dots:false,
+  centerMode:true,
+  centerPadding:0,
 });
 
+//menu fixed
+
+let main_menu=document.querySelector('.main_menu');
+
+window.addEventListener('scroll',function(){
+    let scrolling =this.scrollY
+
+    if(scrolling>300){
+      main_menu.classList.add('fixed_menu')
+    }else{
+      main_menu.classList.remove('fixed_menu')
+    }
+    
+})
 
       
           
